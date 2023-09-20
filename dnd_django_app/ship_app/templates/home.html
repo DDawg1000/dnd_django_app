@@ -1,0 +1,5 @@
+{% for button in buttons %}
+    <button onclick="location.href='{% url 'increment' button.id %}'">{{ button.label }}</button>
+    <span>{{ button.count }}</span><br>
+{% endfor %}
+
